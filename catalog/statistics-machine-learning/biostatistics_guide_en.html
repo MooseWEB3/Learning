@@ -2043,10 +2043,10 @@ estimates, tests, and interpretation.</p>
   const zh=(d.documentElement.lang||"").toLowerCase().startsWith("zh"),s=d.currentScript,t=d.getElementById("TOC");
   const p=d.createElement("div");p.className="mw3-progress";p.setAttribute("aria-hidden","true");
   const skip=d.createElement("a");skip.className="mw3-skip";skip.href="#mw3-content";skip.textContent=zh?"跳到正文":"Skip to content";
-  const h=d.createElement("header");h.className="mw3-topbar";h.innerHTML=`<a class="mw3-brand" href="#title-block-header"><span class="mw3-logo">MW3</span><span>MooseWeb3</span><span class="mw3-sub">BIOSTATISTICS</span></a><span class="mw3-spacer"></span><nav class="mw3-langs" aria-label="${zh?"语言选择":"Language selector"}"><a href="biostatistics_guide_zh.html" aria-current="${zh?"page":"false"}">中文</a><a href="biostatistics_guide_en.html" aria-current="${zh?"false":"page"}">EN</a></nav><button class="mw3-menu" type="button" aria-controls="TOC" aria-expanded="false">${zh?"目录":"Contents"}</button>`;
+  const h=d.createElement("header");h.className="mw3-topbar";h.innerHTML=`<a class="mw3-brand" href="#title-block-header"><span class="mw3-logo">MW3</span><span>MooseWeb3</span><span class="mw3-sub">BIOSTATISTICS</span></a><span class="mw3-spacer"></span><nav class="mw3-langs" aria-label="Guide navigation"><a href="../../index.html">Learning Hub</a><a href="biostatistics_guide_en.html" aria-current="page">EN</a></nav><button class="mw3-menu" type="button" aria-controls="TOC" aria-expanded="false">${zh?"目录":"Contents"}</button>`;
   b.prepend(p,skip,h);
   const m=d.createElement("main");m.id="mw3-content";m.tabIndex=-1;
-  if(t&&s){let n=t.nextSibling;while(n&&n!==s){const next=n.nextSibling;m.appendChild(n);n=next;}b.insertBefore(m,s);}
+  if(t){const host=t.parentNode;let n=t.nextSibling;while(n){const next=n.nextSibling;m.appendChild(n);n=next;}if(host)host.appendChild(m);}const hdr=d.getElementById("header");if(hdr&&!d.getElementById("title-block-header"))hdr.id="title-block-header";
   d.querySelectorAll("pre").forEach(pre=>{let shell=pre.parentElement;if(!shell||!shell.classList.contains("sourceCode")){shell=d.createElement("div");pre.parentNode.insertBefore(shell,pre);shell.appendChild(pre);}shell.classList.add("mw3-code-shell");const cls=(pre.className+" "+((pre.querySelector("code")||{}).className||"")).toLowerCase();const lang=cls.includes("python")?"Python":(cls.includes("bash")?"Shell":(/\br\b/.test(cls)?"R":""));if(lang){const tag=d.createElement("span");tag.textContent=lang;tag.setAttribute("aria-hidden","true");tag.style.cssText="position:absolute;top:10px;left:12px;padding:4px 8px;color:#9fb0d0;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:6px;font:700 11px/1 inherit;letter-spacing:.04em";shell.appendChild(tag);pre.style.paddingTop="44px";}const btn=d.createElement("button");btn.className="mw3-copy";btn.type="button";btn.textContent=zh?"复制":"Copy";btn.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(pre.innerText);btn.textContent=zh?"已复制":"Copied";setTimeout(()=>btn.textContent=zh?"复制":"Copy",1300);}catch(e){btn.textContent=zh?"复制失败":"Copy failed";}});shell.appendChild(btn);});
   const top=d.createElement("button");top.className="mw3-top";top.type="button";top.textContent="↑";top.setAttribute("aria-label",zh?"返回顶部":"Back to top");top.onclick=()=>scrollTo({top:0,behavior:"smooth"});b.appendChild(top);
   const menu=h.querySelector(".mw3-menu");if(menu&&t){menu.onclick=()=>{const open=b.classList.toggle("mw3-toc-open");menu.setAttribute("aria-expanded",String(open));};t.onclick=e=>{if(e.target.closest("a")){b.classList.remove("mw3-toc-open");menu.setAttribute("aria-expanded","false");}};}
@@ -2100,7 +2100,5 @@ $(document).ready(function () {
   })();
 </script>
 
-<script>document.querySelectorAll('a[href$="_zh.html"]').forEach(link => link.remove());</script>
-<script src="../hub-link.js"></script>
 </body>
 </html>
