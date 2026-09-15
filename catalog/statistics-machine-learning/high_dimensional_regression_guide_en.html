@@ -338,8 +338,6 @@ display: none;
 </head>
 
 <body>
-
-
 <div class="container-fluid main-container">
 
 
@@ -443,6 +441,27 @@ learning path and completion checklist</a></li>
 Acknowledgments</a></li>
 </ul>
 </div>
+
+<style>
+:root{--bg:#f4f7fb;--surface:#fff;--ink:#172033;--muted:#667085;--line:#dfe7f1;--navy:#0a1020;--primary:#6d5dfc;--primary-dark:#5144d8;--cyan:#19c3d2;--green:#20a36a;--amber:#f2a93b;--code:#0d1424;--shadow:0 18px 55px rgba(31,43,71,.10)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;background:var(--bg)}
+.container-fluid.main-container,.main-container{max-width:none!important;width:auto!important;margin:0!important;padding-left:0!important;padding-right:0!important}body{max-width:none;margin:0;padding:0 24px 72px;color:var(--ink);background:radial-gradient(circle at 86% 5%,rgba(109,93,252,.11),transparent 25rem),radial-gradient(circle at 10% 20%,rgba(25,195,210,.08),transparent 22rem),var(--bg);font:17px/1.78 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--primary-dark);text-underline-offset:3px}::selection{color:#fff;background:var(--primary)}
+.mw3-progress{position:fixed;z-index:1200;inset:0 auto auto 0;width:0;height:3px;background:linear-gradient(90deg,var(--cyan),var(--primary))}
+.mw3-topbar{position:fixed;z-index:1100;inset:0 0 auto;height:72px;display:flex;align-items:center;gap:20px;padding:0 max(24px,calc((100vw - 1420px)/2));color:#fff;background:rgba(10,16,32,.95);border-bottom:1px solid rgba(255,255,255,.1);box-shadow:0 8px 30px rgba(10,16,32,.18);backdrop-filter:blur(16px)}
+.mw3-brand{display:inline-flex;flex-shrink:0;align-items:center;gap:10px;color:#fff;font-weight:850;font-size:19px;text-decoration:none}.mw3-brand:hover{color:#fff}.mw3-logo{display:grid;place-items:center;width:38px;height:38px;color:#fff;background:linear-gradient(135deg,var(--cyan),var(--primary));border-radius:11px;font-size:12px;box-shadow:0 7px 20px rgba(109,93,252,.36)}.mw3-sub{color:#9faac0;font-size:11px;font-weight:750;letter-spacing:.13em}.mw3-spacer{flex:1}
+.mw3-langs{display:flex;flex-shrink:0;gap:5px}.mw3-langs a{padding:7px 11px;color:#b9c3d6;border-radius:9px;font-size:14px;font-weight:750;text-decoration:none}.mw3-langs a:hover,.mw3-langs a[aria-current="page"]{color:#fff;background:rgba(255,255,255,.11)}.mw3-menu{display:none;padding:8px 11px;color:#fff;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:9px;cursor:pointer}.mw3-skip{position:fixed;z-index:1300;top:8px;left:12px;padding:8px 12px;color:#fff;background:var(--primary);border-radius:8px;transform:translateY(-160%)}.mw3-skip:focus{transform:translateY(0)}
+#title-block-header{max-width:940px;margin:112px auto 30px;padding:clamp(30px,5vw,54px);color:#fff;text-align:left;background:linear-gradient(125deg,rgba(109,93,252,.97),rgba(36,61,118,.98));border-radius:26px;border:1px solid rgba(255,255,255,.15);box-shadow:0 24px 70px rgba(39,47,100,.22)}
+#title-block-header::before{content:"MOOSEWEB3 · HIGH-DIMENSIONAL REGRESSION · R & PYTHON";display:inline-block;margin-bottom:16px;padding:7px 11px;color:#dffcff;background:rgba(9,18,45,.2);border:1px solid rgba(255,255,255,.2);border-radius:999px;font-size:11px;font-weight:800;letter-spacing:.12em}#title-block-header .title{margin:0 0 14px;color:#fff;font-size:clamp(32px,5vw,50px);line-height:1.14;letter-spacing:-.035em}#title-block-header .author,#title-block-header .date{margin:4px 0 0;color:#dce4ff}
+#TOC{position:fixed;z-index:900;top:96px;left:max(18px,calc(50vw - 607px));width:245px;max-height:calc(100vh - 122px);padding:18px 15px 20px;overflow-y:auto;background:rgba(255,255,255,.93);border:1px solid var(--line);border-radius:16px;box-shadow:0 14px 40px rgba(31,43,71,.08);backdrop-filter:blur(12px);scrollbar-width:thin}#TOC ul{margin:0;padding:0;list-style:none}#TOC ul ul{margin:5px 0 7px 9px;padding-left:10px;border-left:1px solid #e4e9f2}#TOC a{display:block;padding:5px 7px;color:#59647a;border-radius:7px;font-size:13px;line-height:1.35;text-decoration:none}#TOC>ul>li>a{color:#28344e;font-weight:750}#TOC a:hover{color:var(--primary-dark);background:#f0efff}
+#mw3-content{max-width:940px;margin:0 auto;padding:18px clamp(24px,4vw,58px) 64px;background:var(--surface);border:1px solid rgba(223,231,241,.9);border-radius:24px;box-shadow:var(--shadow)}
+h1,h2,h3{color:#17254a;scroll-margin-top:92px}h1{margin:3.1rem 0 1.15rem;padding-bottom:.65rem;border-bottom:1px solid var(--line);font-size:clamp(27px,3vw,36px);line-height:1.3;letter-spacing:-.025em}#mw3-content>h1:first-of-type{margin-top:1.4rem}h2{margin:2.25rem 0 .75rem;font-size:24px}h3{margin:1.8rem 0 .6rem;font-size:20px}p,li{color:#344054}
+code{padding:.12em .36em;color:#5b3fd0;background:#f0efff;border-radius:5px;font:.9em "Cascadia Code","SFMono-Regular",Consolas,monospace}.mw3-code-shell{position:relative;margin:1.15rem 0 1.5rem;background:#0d1424!important;border:1px solid #202b42;border-radius:14px;box-shadow:0 12px 28px rgba(13,20,36,.13);overflow:hidden;color:#dfe7f5!important}.mw3-code-shell pre{margin:0;padding:22px 20px;overflow-x:auto;color:#dfe7f5!important;background:transparent!important;border:0;font-size:14px;line-height:1.65}.mw3-code-shell pre code,.mw3-code-shell code,.mw3-code-shell code span{padding:0;color:#dfe7f5;background:transparent!important}.mw3-code-shell code span.kw,.mw3-code-shell code span.cf{color:#c792ea!important}.mw3-code-shell code span.fu,.mw3-code-shell code span.bu{color:#82aaff!important}.mw3-code-shell code span.st,.mw3-code-shell code span.ss{color:#c3e88d!important}.mw3-code-shell code span.dv,.mw3-code-shell code span.fl{color:#f78c6c!important}.mw3-code-shell code span.co{color:#91a0bc!important;font-style:italic}.mw3-code-shell code span.op{color:#89ddff!important}.mw3-copy{position:absolute;z-index:2;top:10px;right:10px;padding:6px 9px;color:#cbd5e7;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:7px;font:700 12px/1.2 inherit;cursor:pointer;opacity:0}.mw3-code-shell:hover .mw3-copy,.mw3-copy:focus{opacity:1}
+table{width:100%;margin:1.25rem 0 1.7rem;border-spacing:0;border-collapse:separate;border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:15px}thead{color:#263553;background:#f2f5fa}th,td{padding:.68rem .82rem;border:0;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}tbody tr:last-child td{border-bottom:0}tbody tr:hover{background:#fafbff}table code{white-space:nowrap}
+blockquote,.note,.warning,.success{margin:1.35rem 0;padding:1rem 1.15rem;border-radius:10px}blockquote,.note{background:linear-gradient(90deg,#edfaff,#f7fbff);border:1px solid #cbeef4;border-left:5px solid var(--cyan)}.warning{background:#fff8eb;border:1px solid #f4dfb1;border-left:5px solid var(--amber)}.success{background:#effaf5;border:1px solid #cbeedc;border-left:5px solid var(--green)}.formula{padding:.9rem 1rem;overflow-x:auto;color:#273454;background:#f7f8fc;border:1px solid var(--line);border-radius:10px;text-align:center}.steps{counter-reset:step;list-style:none;padding-left:0}.steps>li{position:relative;margin:.8rem 0;padding:.8rem 1rem .8rem 3.4rem;background:#fafbff;border:1px solid var(--line);border-radius:10px}.steps>li::before{counter-increment:step;content:counter(step);position:absolute;left:1rem;top:.75rem;display:grid;place-items:center;width:1.7rem;height:1.7rem;color:#fff;background:var(--primary);border-radius:50%;font-weight:800}
+.mw3-top{position:fixed;z-index:950;right:24px;bottom:24px;width:44px;height:44px;color:#fff;background:var(--navy);border:0;border-radius:13px;box-shadow:0 10px 28px rgba(10,16,32,.24);cursor:pointer;opacity:0;transform:translateY(10px);pointer-events:none;transition:.2s}.mw3-top.is-visible{opacity:1;transform:translateY(0);pointer-events:auto}button:focus-visible,a:focus-visible{outline:3px solid rgba(25,195,210,.75);outline-offset:3px}
+@media(min-width:1241px){#title-block-header,#mw3-content{margin-left:max(291px,calc(50vw - 334px));margin-right:0}}@media(max-width:1240px){#TOC{top:82px;left:14px;width:min(310px,calc(100vw - 28px));max-height:calc(100vh - 96px);transform:translateX(-120%);transition:transform .24s ease}body.mw3-toc-open #TOC{transform:translateX(0)}.mw3-menu{display:inline-flex}}@media(max-width:700px){body{padding:0 12px 48px;font-size:16px}.mw3-topbar{height:64px;padding:0 14px;gap:9px}.mw3-logo{width:34px;height:34px}.mw3-sub{display:none}.mw3-langs a{padding:6px 8px;font-size:13px}#title-block-header{margin:88px 0 18px;padding:27px 23px;border-radius:20px}#title-block-header .title{font-size:30px}#mw3-content{padding:14px 20px 46px;border-radius:18px}h1{font-size:27px}h2{font-size:22px}table{display:block;overflow-x:auto;white-space:nowrap}.mw3-copy{opacity:1}}@media print{body{padding:0;background:#fff}.mw3-topbar,.mw3-progress,.mw3-top,#TOC,.mw3-copy{display:none!important}#title-block-header,#mw3-content{max-width:none;margin:0;box-shadow:none}#mw3-content{border:0}}
+</style>
 
 <div id="what-this-guide-is-for" class="section level1">
 <h1>1. What this guide is for</h1>
@@ -2165,6 +2184,24 @@ contributions.</p>
 </div>
 
 <script>
+(function(){
+  "use strict";
+  const d=document,b=d.body;if(!b||d.querySelector(".mw3-topbar"))return;
+  const zh=(d.documentElement.lang||"").toLowerCase().startsWith("zh"),s=d.currentScript,t=d.getElementById("TOC");
+  const p=d.createElement("div");p.className="mw3-progress";p.setAttribute("aria-hidden","true");
+  const skip=d.createElement("a");skip.className="mw3-skip";skip.href="#mw3-content";skip.textContent=zh?"跳到正文":"Skip to content";
+  const h=d.createElement("header");h.className="mw3-topbar";h.innerHTML=`<a class="mw3-brand" href="#title-block-header"><span class="mw3-logo">MW3</span><span>MooseWeb3</span><span class="mw3-sub">HIGH-DIM REGRESSION</span></a><span class="mw3-spacer"></span><nav class="mw3-langs" aria-label="Guide navigation"><a href="../../index.html">Learning Hub</a><a href="high_dimensional_regression_guide_en.html" aria-current="page">EN</a></nav><button class="mw3-menu" type="button" aria-controls="TOC" aria-expanded="false">${zh?"目录":"Contents"}</button>`;
+  b.prepend(p,skip,h);
+  const m=d.createElement("main");m.id="mw3-content";m.tabIndex=-1;
+  if(t){const host=t.parentNode;let n=t.nextSibling;while(n){const next=n.nextSibling;m.appendChild(n);n=next;}if(host)host.appendChild(m);}const hdr=d.getElementById("header");if(hdr&&!d.getElementById("title-block-header"))hdr.id="title-block-header";
+  d.querySelectorAll("pre").forEach(pre=>{let shell=pre.parentElement;if(!shell||!shell.classList.contains("sourceCode")){shell=d.createElement("div");pre.parentNode.insertBefore(shell,pre);shell.appendChild(pre);}shell.classList.add("mw3-code-shell");const cls=(pre.className+" "+((pre.querySelector("code")||{}).className||"")).toLowerCase();const lang=cls.includes("python")?"Python":(cls.includes("bash")?"Shell":(/\br\b/.test(cls)?"R":""));if(lang){const tag=d.createElement("span");tag.textContent=lang;tag.setAttribute("aria-hidden","true");tag.style.cssText="position:absolute;top:10px;left:12px;padding:4px 8px;color:#9fb0d0;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:6px;font:700 11px/1 inherit;letter-spacing:.04em";shell.appendChild(tag);pre.style.paddingTop="44px";}const btn=d.createElement("button");btn.className="mw3-copy";btn.type="button";btn.textContent=zh?"复制":"Copy";btn.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(pre.innerText);btn.textContent=zh?"已复制":"Copied";setTimeout(()=>btn.textContent=zh?"复制":"Copy",1300);}catch(e){btn.textContent=zh?"复制失败":"Copy failed";}});shell.appendChild(btn);});
+  const top=d.createElement("button");top.className="mw3-top";top.type="button";top.textContent="↑";top.setAttribute("aria-label",zh?"返回顶部":"Back to top");top.onclick=()=>scrollTo({top:0,behavior:"smooth"});b.appendChild(top);
+  const menu=h.querySelector(".mw3-menu");if(menu&&t){menu.onclick=()=>{const open=b.classList.toggle("mw3-toc-open");menu.setAttribute("aria-expanded",String(open));};t.onclick=e=>{if(e.target.closest("a")){b.classList.remove("mw3-toc-open");menu.setAttribute("aria-expanded","false");}};}
+  const update=()=>{const max=d.documentElement.scrollHeight-innerHeight;p.style.width=`${max>0?Math.min(scrollY/max,1)*100:0}%`;top.classList.toggle("is-visible",scrollY>560);};update();addEventListener("scroll",update,{passive:true});addEventListener("resize",update);
+})();
+</script>
+
+<script>
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
@@ -2204,7 +2241,5 @@ $(document).ready(function () {
   })();
 </script>
 
-<script>document.querySelectorAll('a[href$="_zh.html"]').forEach(link => link.remove());</script>
-<script src="../hub-link.js"></script>
 </body>
 </html>
